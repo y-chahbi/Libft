@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:35:13 by ychahbi           #+#    #+#             */
-/*   Updated: 2022/11/03 14:39:48 by ychahbi          ###   ########.fr       */
+/*   Updated: 2022/11/15 16:37:51 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	wd_count(char const *s, char c)
 	{
 		if (dex == 0 && s[dex] != c)
 			wd_count++;
-		if (s[dex] == c && s[dex + 1] != c)
+		if (s[dex] == c && (s[dex + 1] != c && s[dex + 1]))
 			wd_count++;
 		dex++;
 	}
